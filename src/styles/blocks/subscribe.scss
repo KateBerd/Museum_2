@@ -43,7 +43,9 @@
     padding-bottom: 3px;
     border: none;
     border-bottom: 1px solid $black-color;
+
     color: $black-color;
+    background-color: transparent;
 
     &::placeholder {
       color: $black-color;
@@ -77,16 +79,17 @@
     &:-webkit-autofill,
     &:-webkit-autofill:hover,
     &:-webkit-autofill:active {
-      -webkit-box-shadow: 0 0 0px 1000px #fff inset;
-      -webkit-text-fill-color: $black-color;
+      -webkit-box-shadow: 0 0 0 1000px #fff inset;
       transition: background-color 5000s ease-in-out 0s;
+
+      -webkit-text-fill-color: $black-color;
     }
 
     &:-webkit-autofill:focus {
-      -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+      -webkit-box-shadow: 0 0 0 1000px #fff inset;
+
       -webkit-text-fill-color: $main-color;
     }
-
 
     @include on-tablet {
       justify-self: start;

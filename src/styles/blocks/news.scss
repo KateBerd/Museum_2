@@ -50,6 +50,7 @@
 
     object-fit: cover;
     object-position: center;
+
     @include hover(transform, scale(1.04));
 
     @include on-desktop {
