@@ -1,11 +1,9 @@
 'use strict';
 
-const form = document.querySelector('.subscribe__form');
+const button = document.querySelector('.subscribe__button');
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-
-  const input = form.querySelector('input');
+button.addEventListener('click', () => {
+  const input = document.querySelector('.subscribe__input');
 
   input.value = '';
 });
