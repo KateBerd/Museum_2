@@ -3,7 +3,7 @@
   background-color: $background-color;
 
   @include on-desktop {
-    background-image: url('/src/images/img_plan_a_visit.png');
+    background-image: url('../images/img_plan_a_visit.png');
     background-repeat: no-repeat;
     background-position: bottom left -100px;
     background-size: contain;

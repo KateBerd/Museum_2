@@ -8,5 +8,4 @@ form.addEventListener('submit', (e) => {
   const input = form.querySelector('input');
 
   input.value = '';
-  console.log('JS работает');
 });
