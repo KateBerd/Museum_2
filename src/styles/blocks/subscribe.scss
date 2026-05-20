@@ -43,11 +43,19 @@
     padding-bottom: 3px;
     border: none;
     border-bottom: 1px solid $black-color;
-
     color: $black-color;
 
     &::placeholder {
       color: $black-color;
+    }
+
+    &:hover {
+      border-bottom: 1px solid $main-color;
+      color: $main-color;
+
+      &::placeholder {
+        color: $main-color;
+      }
     }
 
     &:focus {
@@ -65,6 +73,20 @@
       font-weight: 700;
       font-style: Bold;
     }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+      -webkit-text-fill-color: $black-color;
+      transition: background-color 5000s ease-in-out 0s;
+    }
+
+    &:-webkit-autofill:focus {
+      -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+      -webkit-text-fill-color: $main-color;
+    }
+
 
     @include on-tablet {
       justify-self: start;
